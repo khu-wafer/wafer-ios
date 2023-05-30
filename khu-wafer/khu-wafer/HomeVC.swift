@@ -12,7 +12,7 @@ class HomeVC: UIViewController {
     // MARK: - Components
     private let headerLabel: UILabel = {
        let lb = UILabel()
-        lb.text = "Khu WareHouse"
+        lb.text = "Khu Warehouse"
         lb.textColor = .black
         lb.font = .boldSystemFont(ofSize: 26)
         lb.textAlignment = .center
@@ -22,7 +22,7 @@ class HomeVC: UIViewController {
     private let scannerButton: UIButton = {
        let btn = UIButton()
         btn.setTitle("Scanner", for: .normal)
-        btn.setTitleColor(.black, for: .normal)
+        btn.setTitleColor(.white, for: .normal)
         btn.backgroundColor = .systemOrange
         btn.titleLabel?.font = .boldSystemFont(ofSize: 18)
         btn.layer.cornerRadius = 15
@@ -32,7 +32,7 @@ class HomeVC: UIViewController {
     private let controlButton: UIButton = {
        let btn = UIButton()
         btn.setTitle("Control", for: .normal)
-        btn.setTitleColor(.black, for: .normal)
+        btn.setTitleColor(.white, for: .normal)
         btn.backgroundColor = .systemOrange
         btn.titleLabel?.font = .boldSystemFont(ofSize: 18)
         btn.layer.cornerRadius = 15
