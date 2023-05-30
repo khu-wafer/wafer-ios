@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E76F012B2A23A71500A2CC13 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E76F012A2A23A71500A2CC13 /* SnapKit */; };
+		E76F01312A23A73900A2CC13 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E76F01302A23A73900A2CC13 /* Then */; };
+		E76F01342A23A77F00A2CC13 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E76F01332A23A77F00A2CC13 /* CombineMoya */; };
+		E76F01362A23A77F00A2CC13 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E76F01352A23A77F00A2CC13 /* Moya */; };
+		E76F01382A23A7AB00A2CC13 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F01372A23A7AB00A2CC13 /* ScannerVC.swift */; };
+		E76F013A2A23A93D00A2CC13 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F01392A23A93D00A2CC13 /* ReaderView.swift */; };
 		E78D449529EBEA2A0003776B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78D449429EBEA2A0003776B /* AppDelegate.swift */; };
 		E78D449729EBEA2A0003776B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78D449629EBEA2A0003776B /* SceneDelegate.swift */; };
 		E78D449929EBEA2A0003776B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78D449829EBEA2A0003776B /* ViewController.swift */; };
@@ -15,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E76F01372A23A7AB00A2CC13 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		E76F01392A23A93D00A2CC13 /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
 		E78D449129EBEA2A0003776B /* khu-wafer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "khu-wafer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78D449429EBEA2A0003776B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E78D449629EBEA2A0003776B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +37,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76F012B2A23A71500A2CC13 /* SnapKit in Frameworks */,
+				E76F01312A23A73900A2CC13 /* Then in Frameworks */,
+				E76F01362A23A77F00A2CC13 /* Moya in Frameworks */,
+				E76F01342A23A77F00A2CC13 /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +66,8 @@
 		E78D449329EBEA2A0003776B /* khu-wafer */ = {
 			isa = PBXGroup;
 			children = (
+				E792E2832A262BD300E112C8 /* Control */,
+				E792E2822A262BC000E112C8 /* Scanner */,
 				E78D449429EBEA2A0003776B /* AppDelegate.swift */,
 				E78D449629EBEA2A0003776B /* SceneDelegate.swift */,
 				E78D449829EBEA2A0003776B /* ViewController.swift */,
@@ -62,6 +76,22 @@
 				E78D44A229EBEA2A0003776B /* Info.plist */,
 			);
 			path = "khu-wafer";
+			sourceTree = "<group>";
+		};
+		E792E2822A262BC000E112C8 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				E76F01392A23A93D00A2CC13 /* ReaderView.swift */,
+				E76F01372A23A7AB00A2CC13 /* ScannerVC.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		E792E2832A262BD300E112C8 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +110,12 @@
 			dependencies = (
 			);
 			name = "khu-wafer";
+			packageProductDependencies = (
+				E76F012A2A23A71500A2CC13 /* SnapKit */,
+				E76F01302A23A73900A2CC13 /* Then */,
+				E76F01332A23A77F00A2CC13 /* CombineMoya */,
+				E76F01352A23A77F00A2CC13 /* Moya */,
+			);
 			productName = "khu-wafer";
 			productReference = E78D449129EBEA2A0003776B /* khu-wafer.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +144,11 @@
 				Base,
 			);
 			mainGroup = E78D448829EBEA2A0003776B;
+			packageReferences = (
+				E76F01292A23A71500A2CC13 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E76F012F2A23A73900A2CC13 /* XCRemoteSwiftPackageReference "Then" */,
+				E76F01322A23A77F00A2CC13 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = E78D449229EBEA2A0003776B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E78D449929EBEA2A0003776B /* ViewController.swift in Sources */,
+				E76F013A2A23A93D00A2CC13 /* ReaderView.swift in Sources */,
+				E76F01382A23A7AB00A2CC13 /* ScannerVC.swift in Sources */,
 				E78D449529EBEA2A0003776B /* AppDelegate.swift in Sources */,
 				E78D449729EBEA2A0003776B /* SceneDelegate.swift in Sources */,
 			);
@@ -346,6 +389,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E76F01292A23A71500A2CC13 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		E76F012F2A23A73900A2CC13 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E76F01322A23A77F00A2CC13 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E76F012A2A23A71500A2CC13 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E76F01292A23A71500A2CC13 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		E76F01302A23A73900A2CC13 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E76F012F2A23A73900A2CC13 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		E76F01332A23A77F00A2CC13 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E76F01322A23A77F00A2CC13 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		E76F01352A23A77F00A2CC13 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E76F01322A23A77F00A2CC13 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E78D448929EBEA2A0003776B /* Project object */;
 }
