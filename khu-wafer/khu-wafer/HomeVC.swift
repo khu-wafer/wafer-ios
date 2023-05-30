@@ -10,6 +10,7 @@ import SnapKit
 
 class HomeVC: UIViewController {
     
+    // MARK: - Components
     private let headerLabel: UILabel = {
        let lb = UILabel()
         lb.text = "Khu WareHouse"
@@ -38,11 +39,29 @@ class HomeVC: UIViewController {
         btn.layer.cornerRadius = 15
         return btn
     }()
-
+    
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         setLayout()
+        setButtonAction()
+    }
+    
+    // MARK: - Function
+    private func setButtonAction() {
+        scannerButton.addTarget(self, action: #selector(pushToScanncerVC), for: .touchUpInside)
+        controlButton.addTarget(self, action: #selector(pushToControlVC), for: .touchUpInside)
+    }
+    
+    @objc private func pushToScanncerVC() {
+        let scannerVC = ScannerVC()
+        self.navigationController?.pushViewController(scannerVC, animated: true)
+    }
+    
+    @objc private func pushToControlVC() {
+        let controlVC = ControlVC()
+        self.navigationController?.pushViewController(controlVC, animated: true)
     }
 
 }
