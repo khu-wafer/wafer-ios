@@ -66,16 +66,32 @@
 		E78D449329EBEA2A0003776B /* khu-wafer */ = {
 			isa = PBXGroup;
 			children = (
+				E792E2832A262BD300E112C8 /* Control */,
+				E792E2822A262BC000E112C8 /* Scanner */,
 				E78D449429EBEA2A0003776B /* AppDelegate.swift */,
 				E78D449629EBEA2A0003776B /* SceneDelegate.swift */,
 				E78D449829EBEA2A0003776B /* ViewController.swift */,
 				E78D449D29EBEA2A0003776B /* Assets.xcassets */,
 				E78D449F29EBEA2A0003776B /* LaunchScreen.storyboard */,
 				E78D44A229EBEA2A0003776B /* Info.plist */,
-				E76F01372A23A7AB00A2CC13 /* ScannerVC.swift */,
-				E76F01392A23A93D00A2CC13 /* ReaderView.swift */,
 			);
 			path = "khu-wafer";
+			sourceTree = "<group>";
+		};
+		E792E2822A262BC000E112C8 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				E76F01392A23A93D00A2CC13 /* ReaderView.swift */,
+				E76F01372A23A7AB00A2CC13 /* ScannerVC.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		E792E2832A262BD300E112C8 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

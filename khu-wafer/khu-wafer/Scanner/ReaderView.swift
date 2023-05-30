@@ -17,8 +17,9 @@ class ReaderView: UIView {
 
     weak var delegate: ReaderViewDelegate?
     
-    var previewLayer: AVCaptureVideoPreviewLayer?
-    var centerGuideLineView: UIView?
+    // previewLayer를 밖에 선언할 필요가 없음
+//    var previewLayer: AVCaptureVideoPreviewLayer!
+    var centerGuideLineView: UIView!
     
     var captureSession: AVCaptureSession?
     
@@ -85,6 +86,7 @@ class ReaderView: UIView {
         }
         
         self.setPreviewLayer()
+//        self.layer.addSublayer(previewLayer)
         self.setCenterGuideLineView()
     }
 
@@ -95,11 +97,12 @@ class ReaderView: UIView {
 
         let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        previewLayer.frame = self.layer.bounds
-
-        self.layer.addSublayer(previewLayer)
-
-        self.previewLayer = previewLayer
+        self.layer.insertSublayer(previewLayer, at: 0)
+        DispatchQueue.main.async {
+            previewLayer.frame = self.bounds
+        }
+//        self.previewLayer = previewLayer
+        
     }
 
     private func setCenterGuideLineView() {

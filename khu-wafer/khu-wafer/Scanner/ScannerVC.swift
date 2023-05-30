@@ -8,6 +8,7 @@ class ScannerVC: UIViewController {
     private let headerLabel: UILabel = {
         let label = UILabel()
         label.text = "Warehouse-Scanner"
+        label.textColor = .black
         label.font = .boldSystemFont(ofSize: 18)
         return label
     }()
@@ -44,15 +45,14 @@ class ScannerVC: UIViewController {
     // TODO: IBAction
     @objc private func scanButton() {
         if self.readerView.isRunning {
-            print("이즈러닝")
-            self.readerView.stop(isButtonTap: true)
-        } else {
             print("이즈낫러닝")
+            self.readerView.stop(isButtonTap: true)
+            readButton.isSelected = false
+        } else {
+            print("이즈러닝")
             self.readerView.start()
+            readButton.isSelected = true
         }
-        readButton.isSelected = self.readerView.isRunning
-        print("이즈셀렉티드 \(self.readerView.isRunning)")
-
     }
 }
 
@@ -95,9 +95,10 @@ extension ScannerVC: ReaderViewDelegate {
 
 extension ScannerVC {
     private func setLayout() {
-        [headerLabel, readerView, readButton].forEach {
+        [headerLabel, readButton].forEach {
             self.view.addSubview($0)
         }
+        self.view.addSubview(readerView)
         
         headerLabel.snp.makeConstraints {
             $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(30)
