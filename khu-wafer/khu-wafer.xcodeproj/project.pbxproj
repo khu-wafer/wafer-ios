@@ -13,6 +13,7 @@
 		E76F01362A23A77F00A2CC13 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E76F01352A23A77F00A2CC13 /* Moya */; };
 		E76F01382A23A7AB00A2CC13 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F01372A23A7AB00A2CC13 /* ScannerVC.swift */; };
 		E76F013A2A23A93D00A2CC13 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F01392A23A93D00A2CC13 /* ReaderView.swift */; };
+		E78101DD2A2647BE006525FD /* ControlCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78101DC2A2647BE006525FD /* ControlCVC.swift */; };
 		E78D449529EBEA2A0003776B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78D449429EBEA2A0003776B /* AppDelegate.swift */; };
 		E78D449729EBEA2A0003776B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78D449629EBEA2A0003776B /* SceneDelegate.swift */; };
 		E78D449E29EBEA2A0003776B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78D449D29EBEA2A0003776B /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		E76F01372A23A7AB00A2CC13 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		E76F01392A23A93D00A2CC13 /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
+		E78101DC2A2647BE006525FD /* ControlCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCVC.swift; sourceTree = "<group>"; };
 		E78D449129EBEA2A0003776B /* khu-wafer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "khu-wafer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78D449429EBEA2A0003776B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E78D449629EBEA2A0003776B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				E792E2882A2631A100E112C8 /* ControlVC.swift */,
+				E78101DC2A2647BE006525FD /* ControlCVC.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				E76F013A2A23A93D00A2CC13 /* ReaderView.swift in Sources */,
 				E76F01382A23A7AB00A2CC13 /* ScannerVC.swift in Sources */,
+				E78101DD2A2647BE006525FD /* ControlCVC.swift in Sources */,
 				E792E2872A26318E00E112C8 /* HomeVC.swift in Sources */,
 				E792E2892A2631A100E112C8 /* ControlVC.swift in Sources */,
 				E78D449529EBEA2A0003776B /* AppDelegate.swift in Sources */,
