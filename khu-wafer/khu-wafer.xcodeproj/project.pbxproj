@@ -15,9 +15,10 @@
 		E76F013A2A23A93D00A2CC13 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F01392A23A93D00A2CC13 /* ReaderView.swift */; };
 		E78D449529EBEA2A0003776B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78D449429EBEA2A0003776B /* AppDelegate.swift */; };
 		E78D449729EBEA2A0003776B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78D449629EBEA2A0003776B /* SceneDelegate.swift */; };
-		E78D449929EBEA2A0003776B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78D449829EBEA2A0003776B /* ViewController.swift */; };
 		E78D449E29EBEA2A0003776B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78D449D29EBEA2A0003776B /* Assets.xcassets */; };
 		E78D44A129EBEA2A0003776B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78D449F29EBEA2A0003776B /* LaunchScreen.storyboard */; };
+		E792E2872A26318E00E112C8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E792E2862A26318E00E112C8 /* HomeVC.swift */; };
+		E792E2892A2631A100E112C8 /* ControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E792E2882A2631A100E112C8 /* ControlVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +27,11 @@
 		E78D449129EBEA2A0003776B /* khu-wafer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "khu-wafer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78D449429EBEA2A0003776B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E78D449629EBEA2A0003776B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E78D449829EBEA2A0003776B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E78D449D29EBEA2A0003776B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E78D44A029EBEA2A0003776B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E78D44A229EBEA2A0003776B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E792E2862A26318E00E112C8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		E792E2882A2631A100E112C8 /* ControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +68,11 @@
 		E78D449329EBEA2A0003776B /* khu-wafer */ = {
 			isa = PBXGroup;
 			children = (
+				E792E2862A26318E00E112C8 /* HomeVC.swift */,
 				E792E2832A262BD300E112C8 /* Control */,
 				E792E2822A262BC000E112C8 /* Scanner */,
 				E78D449429EBEA2A0003776B /* AppDelegate.swift */,
 				E78D449629EBEA2A0003776B /* SceneDelegate.swift */,
-				E78D449829EBEA2A0003776B /* ViewController.swift */,
 				E78D449D29EBEA2A0003776B /* Assets.xcassets */,
 				E78D449F29EBEA2A0003776B /* LaunchScreen.storyboard */,
 				E78D44A229EBEA2A0003776B /* Info.plist */,
@@ -90,6 +92,7 @@
 		E792E2832A262BD300E112C8 /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				E792E2882A2631A100E112C8 /* ControlVC.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -175,9 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E78D449929EBEA2A0003776B /* ViewController.swift in Sources */,
 				E76F013A2A23A93D00A2CC13 /* ReaderView.swift in Sources */,
 				E76F01382A23A7AB00A2CC13 /* ScannerVC.swift in Sources */,
+				E792E2872A26318E00E112C8 /* HomeVC.swift in Sources */,
+				E792E2892A2631A100E112C8 /* ControlVC.swift in Sources */,
 				E78D449529EBEA2A0003776B /* AppDelegate.swift in Sources */,
 				E78D449729EBEA2A0003776B /* SceneDelegate.swift in Sources */,
 			);
