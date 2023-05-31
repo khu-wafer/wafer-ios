@@ -22,7 +22,7 @@ class ControlCVC: UICollectionViewCell {
     // MARK: - Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .orange
+        self.backgroundColor = .systemOrange
         self.layer.cornerRadius = 15
         setLayout()
     }

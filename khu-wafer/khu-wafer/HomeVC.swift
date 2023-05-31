@@ -14,7 +14,7 @@ class HomeVC: UIViewController {
        let lb = UILabel()
         lb.text = "Khu Warehouse"
         lb.textColor = .black
-        lb.font = .boldSystemFont(ofSize: 26)
+        lb.font = .boldSystemFont(ofSize: 32)
         lb.textAlignment = .center
         return lb
     }()
@@ -24,7 +24,7 @@ class HomeVC: UIViewController {
         btn.setTitle("Scanner", for: .normal)
         btn.setTitleColor(.white, for: .normal)
         btn.backgroundColor = .systemOrange
-        btn.titleLabel?.font = .boldSystemFont(ofSize: 18)
+        btn.titleLabel?.font = .boldSystemFont(ofSize: 24)
         btn.layer.cornerRadius = 15
         return btn
     }()
@@ -34,7 +34,7 @@ class HomeVC: UIViewController {
         btn.setTitle("Control", for: .normal)
         btn.setTitleColor(.white, for: .normal)
         btn.backgroundColor = .systemOrange
-        btn.titleLabel?.font = .boldSystemFont(ofSize: 18)
+        btn.titleLabel?.font = .boldSystemFont(ofSize: 24)
         btn.layer.cornerRadius = 15
         return btn
     }()
@@ -81,13 +81,13 @@ extension HomeVC {
         scannerButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         scannerButton.topAnchor.constraint(equalTo: self.headerLabel.bottomAnchor, constant: 99).isActive = true
         scannerButton.widthAnchor.constraint(equalToConstant: 217).isActive = true
-        scannerButton.heightAnchor.constraint(equalToConstant: 43).isActive = true
+        scannerButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
         controlButton.translatesAutoresizingMaskIntoConstraints = false
         controlButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         controlButton.topAnchor.constraint(equalTo: self.scannerButton.bottomAnchor, constant: 94).isActive = true
         controlButton.widthAnchor.constraint(equalToConstant: 217).isActive = true
-        controlButton.heightAnchor.constraint(equalToConstant: 43).isActive = true
+        controlButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
 
         
     }

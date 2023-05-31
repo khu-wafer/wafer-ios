@@ -84,7 +84,7 @@ extension ControlVC: URLSessionWebSocketDelegate {
         webSocket?.cancel(with: .goingAway, reason: "Demo ended".data(using: .utf8))
     }
     func send(index: Int = 0) {
-        DispatchQueue.global().asyncAfter(deadline: .now() + 0.1) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
 //              self.send()
               self.webSocket?.send(.string("Send Index: \(index)"), completionHandler: { error in
                   if let error = error {
