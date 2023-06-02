@@ -4,6 +4,7 @@ import AVFoundation
 import SnapKit
 
 class ScannerVC: UIViewController {
+    private let dummyRegisterModel: PostRegisterModel = PostRegisterModel(name: "이름", status: "상태", arrivalDate: "도착날짜", shipmentDate: "배송날짜", departure: "출발", arrivals: "도착", imgUrl: "이미지URL")
     
     private let headerLabel: UILabel = {
         let label = UILabel()
@@ -67,9 +68,12 @@ extension ScannerVC: ReaderViewDelegate {
                 message = "QR코드 or 바코드를 인식하지 못했습니다.\n다시 시도해주세요."
                 break
             }
-
+            
             title = "알림"
-            message = "인식성공\n\(code)"
+            message = "상품이 성공적으로 등록되었습니다.\n코드번호:\(code)"
+            
+            self.postRegisterProduct(data: dummyRegisterModel)
+
         case .fail:
             title = "에러"
             message = "QR코드 or 바코드를 인식하지 못했습니다.\n다시 시도해주세요."
@@ -83,11 +87,11 @@ extension ScannerVC: ReaderViewDelegate {
                 return
             }
         }
-
+        
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-
+        
         let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
-
+        
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
     }
@@ -116,6 +120,18 @@ extension ScannerVC {
             $0.centerX.equalToSuperview()
             $0.height.equalTo(50)
             $0.width.equalTo(200)
+        }
+    }
+}
+
+// MARK: - Network
+extension ScannerVC {
+    private func postRegisterProduct(data: PostRegisterModel) {
+        WarehouseAPI.shared.postWarehouseProduct(data: data) {
+            response in
+            if let res = response {
+                print("리스폰스 \(res)")
+            }
         }
     }
 }
