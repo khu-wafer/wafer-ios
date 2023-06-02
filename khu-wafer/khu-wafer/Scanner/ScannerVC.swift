@@ -7,13 +7,13 @@ class ScannerVC: UIViewController {
     
     private let headerLabel: UILabel = {
         let label = UILabel()
-        label.text = "Warehouse-Scanner"
+        label.text = "Scanner"
         label.textColor = .black
-        label.font = .boldSystemFont(ofSize: 18)
+        label.font = .boldSystemFont(ofSize: 26)
         return label
     }()
     private let readerView = ReaderView()
-    private let readButton: UIButton = {
+    private lazy var readButton: UIButton = {
         let button = UIButton()
         button.setTitle("START", for: .normal)
         button.setTitleColor(.white, for: .normal)
