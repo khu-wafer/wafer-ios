@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BASE_API_KEY</key>
+	<string>$(BASE_API_KEY)</string>
 	<key>NSCameraUsageDescription</key>
 	<string>&quot;QR Code 또는 Barcode 인식을 위해 카메라 권한이 필요합니다. 카메라 사용을 동의 하시겠습니까?&quot;</string>
 	<key>UIApplicationSceneManifest</key>
