@@ -55,7 +55,8 @@ class ControlVC: UIViewController {
             delegate: self,
             delegateQueue: OperationQueue()
         )
-        let url = URL(string: "wss://socketsbay.com/wss/v2/1/demo/")
+        let url = URL(string: "ws://172.20.10.7:8080/")
+//        let url = URL(string: "wss://socketsbay.com/wss/v2/1/demo/")
         if let url = url {
             webSocket = session.webSocketTask(with: url)
         }
