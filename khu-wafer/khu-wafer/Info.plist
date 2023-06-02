@@ -6,6 +6,11 @@
 	<string>$(BASE_API_KEY)</string>
 	<key>NSCameraUsageDescription</key>
 	<string>&quot;QR Code 또는 Barcode 인식을 위해 카메라 권한이 필요합니다. 카메라 사용을 동의 하시겠습니까?&quot;</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
