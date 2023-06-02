@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E71559622A29B194008B850A /* MoyaPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71559612A29B194008B850A /* MoyaPlugin.swift */; };
 		E76F012B2A23A71500A2CC13 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E76F012A2A23A71500A2CC13 /* SnapKit */; };
 		E76F01312A23A73900A2CC13 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E76F01302A23A73900A2CC13 /* Then */; };
 		E76F01342A23A77F00A2CC13 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E76F01332A23A77F00A2CC13 /* CombineMoya */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E71559612A29B194008B850A /* MoyaPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaPlugin.swift; sourceTree = "<group>"; };
 		E71559632A29B55E008B850A /* API.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = API.xcconfig; sourceTree = "<group>"; };
 		E76F01372A23A7AB00A2CC13 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		E76F01392A23A93D00A2CC13 /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E71559602A29B188008B850A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E71559612A29B194008B850A /* MoyaPlugin.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		E786B30E2A29BFC1003CCEC7 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				E786B30E2A29BFC1003CCEC7 /* Supports */,
+				E71559602A29B188008B850A /* Network */,
 				E792E2862A26318E00E112C8 /* HomeVC.swift */,
 				E792E2832A262BD300E112C8 /* Control */,
 				E792E2822A262BC000E112C8 /* Scanner */,
@@ -191,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71559622A29B194008B850A /* MoyaPlugin.swift in Sources */,
 				E76F013A2A23A93D00A2CC13 /* ReaderView.swift in Sources */,
 				E76F01382A23A7AB00A2CC13 /* ScannerVC.swift in Sources */,
 				E78101DD2A2647BE006525FD /* ControlCVC.swift in Sources */,
