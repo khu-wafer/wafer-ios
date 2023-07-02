@@ -55,7 +55,7 @@ class ControlVC: UIViewController {
             delegate: self,
             delegateQueue: OperationQueue()
         )
-        let url = URL(string: "ws://172.20.10.7:8080/")
+        let url = URL(string: "ws://192.168.18.55:8080/")
 //        let url = URL(string: "wss://socketsbay.com/wss/v2/1/demo/")
         if let url = url {
             webSocket = session.webSocketTask(with: url)
@@ -87,7 +87,7 @@ extension ControlVC: URLSessionWebSocketDelegate {
     func send(index: Int = 0) {
         DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
 //              self.send()
-              self.webSocket?.send(.string("Send Index: \(index)"), completionHandler: { error in
+              self.webSocket?.send(.string("\(index)"), completionHandler: { error in
                   if let error = error {
                       print("Send error: \(error)")
                   }
@@ -96,13 +96,17 @@ extension ControlVC: URLSessionWebSocketDelegate {
           }
           
       }
-    
+     
     func receive() {
         
         webSocket?.receive(completionHandler: { [weak self] result in
-            
+            var title = ""
+            var content = ""
+
             switch result {
             case .success(let message):
+                title = "성공"
+                content = "연결에 성공하였습니다."
                 switch message {
                 case .data(let data):
                     print("Got data: \(data)")
@@ -112,9 +116,20 @@ extension ControlVC: URLSessionWebSocketDelegate {
                     break
                 }
             case .failure(let error):
+                title = "실패"
+                content = "연결에 실패하였습니다."
                 print("Receive error: \(error)")
             }
+            let alert = UIAlertController(title: title, message: content, preferredStyle: .alert)
             
+            let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+            
+            alert.addAction(okAction)
+            
+            DispatchQueue.main.async {
+                self?.present(alert, animated: true, completion: nil)
+
+            }
             self?.receive()
         })
         

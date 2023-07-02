@@ -4,7 +4,7 @@ import AVFoundation
 import SnapKit
 
 class ScannerVC: UIViewController {
-    private let dummyRegisterModel: PostRegisterModel = PostRegisterModel(name: "이름", status: "상태", arrivalDate: "도착날짜", shipmentDate: "배송날짜", departure: "출발", arrivals: "도착", imgUrl: "이미지URL")
+    private let dummyRegisterModel: PostRegisterModel = PostRegisterModel(name: "Bottle", status: "arrived", arrivalDate: "Sat Apr 22", shipmentDate: "Sun Apr 23", departure: "38, Eunhaeng-ro, Yeongdeungpo-gu, Seoul, Korea", arrivals: "26, Gukjegeumyung-ro 8-gil, Yeongdeungpo-gu, Seoul, Korea", imgUrl: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ym90dGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60URL")
     
     private let headerLabel: UILabel = {
         let label = UILabel()
